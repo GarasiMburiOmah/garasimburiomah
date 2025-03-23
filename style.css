@@ -1,0 +1,419 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.mobil {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.logo {
+    width: 100px; /* Sesuaikan ukuran */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Biar rata tengah */
+}
+
+/* Styling untuk Navigasi */
+nav {
+    display: flex;
+    justify-content: center; /* Posisi tengah */
+    align-items: center;
+    gap: 15px; /* Jarak antar ikon */
+    height: 50px;
+}
+
+/* Styling untuk Link Sosial Media */
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara ikon dan teks */
+    color: white; /* Warna awal putih */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Efek transisi */
+}
+
+.social-link:hover {
+    color: blue; /* Berubah menjadi biru saat di-hover */
+}
+
+/* Styling untuk Logo Sosial Media */
+.social-logo {
+    width: 18px; /* Ukuran ikon */
+    height: auto;
+}
+/* Styling untuk WhatsApp */
+.wa-link {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara ikon dan teks */
+    color: white; /* Warna teks */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wa-logo {
+    width: 18px; /* Ukuran lebih kecil */
+    height: auto;
+}
+.wa-link:hover {
+    color: blue; /* Berubah menjadi biru saat di-hover */
+}
+.mobil-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar mobil */
+    flex-wrap: wrap; /* Agar rapi di layar kecil */
+    padding: 20px;
+}
+
+.mobil {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: white;
+    text-align: center;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobil-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* Halaman Detail */
+.detail-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+/* Mengatur container daftar mobil */
+.mobil-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Pusatkan item */
+    gap: 20px; /* Beri jarak antar mobil */
+    padding: 20px;
+}
+
+/* Mengatur tampilan setiap mobil */
+.mobil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px; /* Atur lebar box mobil */
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobil:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Mengatur gambar mobil */
+.mobil img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Mengatur teks nama mobil */
+.mobil h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Mengatur harga mobil */
+.mobil p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-button img,
+.back-button i {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+
+.detail-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+h2 {
+    color: black;
+}
+
+.description {
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+/* Kotak pencarian */
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* Modal Gambar */
+.modal {
+    display: none; /* Awalnya disembunyikan */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap */
+}
+
+.modal-content {
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    position: relative;
+}
+
+
+/* Tombol Close */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Tombol navigasi di modal */
+.modal .prev, .modal .next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+}
+
+.modal .prev:hover, .modal .next:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.modal .prev { left: 5%; }
+.modal .next { right: 5%; }
+.detail-container {
+    text-align: center;
+    margin-top: 80px; /* Beri jarak agar tidak tertutup header */
+}
+
+#detail-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.detail-desc-container {
+    background: #f9f9f9; /* Warna abu terang agar tidak monoton */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.detail-desc-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.detail-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.detail-desc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-desc ul li {
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.detail-desc ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+.description-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.description-box, .detail-box {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Efek abu-abu untuk mobil SOLD OUT */
+.sold-out {
+    opacity: 0.5; /* Membuat tampilan lebih pudar */
+    pointer-events: auto; /* Tetap bisa diklik */
+}
+
+/* Label SOLD OUT */
+.sold-out-label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Agar semua mobil tetap bisa diklik */
+.mobil {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
